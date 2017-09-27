@@ -1,0 +1,21 @@
+package com.example.demo.ctrl;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller 
+public class TestCtrl {
+	 @RequestMapping("/")
+	    public String index() {
+	        return "index.html";
+	    }
+	 
+	 @RequestMapping("/view")
+	    public String view() {
+	        return "view/view.html";
+	    }
+	 
+	
+
+}
+
